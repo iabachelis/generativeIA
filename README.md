@@ -14,29 +14,33 @@ Privacidad de Datos: Si se utilizan datos de usuarios (por ejemplo, sus preferen
 Responsabilidad Legal y Ética en Caso de Uso Inapropiado: Si la música generada se utiliza de manera inapropiada, por ejemplo, en contextos que promueven el odio o la violencia, surge la cuestión de quién es responsable: el creador del algoritmo, el usuario, o ambos.
 Para mitigar estos riesgos, es importante desarrollar estos sistemas de manera responsable, considerando aspectos legales, éticos y culturales, y estableciendo prácticas claras en cuanto a derechos de autor y uso de los datos.
 
-La elección de un modelo de lenguaje de gran escala (LLM, por sus siglas en inglés) para implementar depende de varios factores como el caso de uso específico, los recursos disponibles, y las restricciones de idioma y privacidad. Aquí hay algunas opciones populares a considerar:
-#Modelos:
-Modelos GPT (Generative Pre-trained Transformer) de OpenAI:
-GPT-3 y GPT-4: Estos son modelos avanzados y versátiles, adecuados para una variedad de tareas de procesamiento de lenguaje natural (NLP). Son particularmente buenos en la generación de texto, la comprensión del lenguaje y pueden ser ajustados para tareas específicas. Sin embargo, su uso requiere acceso a través de la API de OpenAI, lo que implica costos y dependencia de un proveedor externo.
-GPT-2: Una versión anterior y más accesible que todavía es potente para muchas aplicaciones. El código y los modelos están disponibles para uso y entrenamiento personalizado.
-BERT (Bidirectional Encoder Representations from Transformers) de Google:
-Especialmente bueno para comprensión del lenguaje y análisis semántico. BERT y sus variantes (como RoBERTa, una versión optimizada de BERT desarrollada por Facebook AI) son ampliamente utilizados para clasificación de texto, respuesta a preguntas y tareas de comprensión.
-T5 (Text-to-Text Transfer Transformer):
-Este modelo trata todas las tareas de NLP como un problema de conversión de texto en texto, lo que lo hace muy versátil. Es útil para resumir textos, traducción automática, y más.
-XLNet:
-Combina lo mejor de GPT y BERT, y es efectivo en tareas que requieren comprensión y generación de texto. Es más complejo y puede ser más difícil de implementar.
-DistilBERT:
-Una versión más ligera y rápida de BERT. Ofrece rendimientos comparables con menos recursos, lo que lo hace adecuado para entornos con recursos limitados.
-EleutherAI’s GPT-Neo y GPT-J:
-Modelos de código abierto similares a GPT-3. GPT-Neo y GPT-J son opciones viables para aquellos que buscan una solución de código abierto y escalable.
-Al elegir un modelo, considera los siguientes factores:
+La elección de un modelo de lenguaje de gran escala (LLM, por sus siglas en inglés) para implementar depende de varios factores como el caso de uso específico, los recursos 
+disponibles, y las restricciones de idioma y privacidad. Aquí hay algunas opciones populares a considerar:
 
-Requerimientos de Recursos: Modelos más grandes requieren más poder computacional. Si tienes recursos limitados, considera modelos más pequeños o versiones destiladas.
-Idioma: Asegúrate de que el modelo soporte el idioma en el que planeas trabajar.
-Casos de Uso Específicos: Algunos modelos funcionan mejor en tareas específicas (por ejemplo, BERT para comprensión, GPT para generación de texto).
-Costos y Accesibilidad: Considera si prefieres una solución de código abierto o una API comercial.
-Privacidad y Seguridad de los Datos: Evalúa las políticas de privacidad si vas a trabajar con datos sensibles.
-Finalmente, la implementación exitosa de un LLM también dependerá de tu habilidad para ajustarlo y adaptarlo a tus necesidades específicas, así como de la calidad y cantidad de los datos de entrenamiento si planeas afinar el modelo.
+##Modelos:
+
+La generación automática de música es un área fascinante que combina el procesamiento del lenguaje natural (NLP) con la teoría y composición musical. Aunque los modelos de lenguaje de gran escala (LLM) como GPT-3 o GPT-4 de OpenAI son poderosos para tareas de NLP, la generación de música presenta desafíos únicos que pueden requerir modelos especializados o técnicas adicionales. Sin embargo, algunos modelos y enfoques que podrían ser considerados incluyen:
+
+Transformers Adaptados para Música:
+Aunque los LLM como GPT-3 están optimizados para texto, se pueden adaptar para trabajar con música, especialmente si la música se codifica de manera que se asemeje a un lenguaje, como con ABC notation o MIDI.
+Estos modelos pueden generar secuencias musicales basadas en prompts o continuar una pieza musical existente.
+OpenAI's Jukebox:
+Es un modelo específicamente diseñado para la generación de música. Utiliza variantes de los modelos Transformer para generar música en varios estilos y puede incluso imitar voces de cantantes específicos.
+Es más especializado que un LLM general y puede ser más adecuado para tareas de generación de música complejas.
+Google Magenta’s Music Transformer:
+Es un proyecto de Google Brain que utiliza un modelo Transformer para generar música. Es capaz de generar composiciones con una estructura más coherente en comparación con modelos anteriores.
+Magenta también ofrece otras herramientas y modelos basados en aprendizaje automático para la generación de arte y música.
+AIVA (Artificial Intelligence Virtual Artist):
+Es una IA diseñada para componer música para películas, videojuegos, comerciales y otros medios. Utiliza algoritmos de aprendizaje profundo y está entrenada en una gran biblioteca de partituras clásicas.
+Modelos Basados en LSTM (Long Short-Term Memory):
+Antes de la popularidad de los Transformers, los modelos basados en LSTM eran comúnmente utilizados para la generación de música secuencial.
+Aunque pueden ser menos avanzados que los Transformers en ciertos aspectos, aún son una opción viable para proyectos más pequeños o específicos.
+Al elegir un modelo para la generación de música, considera los siguientes factores:
+
+Tipo de Música: Diferentes modelos pueden ser mejores para diferentes estilos de música (clásica, pop, jazz, etc.).
+Complejidad Deseada: Algunos modelos pueden generar melodías simples, mientras que otros pueden crear composiciones completas con múltiples instrumentos.
+Recursos Disponibles: Modelos más avanzados pueden requerir más recursos computacionales.
+En resumen, aunque los LLM tradicionales no están diseñados específicamente para la música, pueden adaptarse para tareas musicales simples, mientras que para tareas más avanzadas, sería mejor utilizar modelos especializados en música como Jukebox de OpenAI o Music Transformer de Google Magenta.
 
 #Política de gobernanza
 
