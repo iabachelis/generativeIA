@@ -1,5 +1,6 @@
 # generativeIA
-Caso de uso: composición automática música según prompts.
+
+**Caso de uso:** composición automática música según prompts.
 Riesgos: Toxicidad (lenguaje inapropiado, racista, sexista...), Legalidad: copyright
 Respuesta de chat GPT:
 La composición automática de música basada en prompts presenta varios riesgos y desafíos tanto desde un punto de vista técnico como ético y legal. Aquí se describen algunos de estos riesgos:
@@ -17,7 +18,7 @@ Para mitigar estos riesgos, es importante desarrollar estos sistemas de manera r
 La elección de un modelo de lenguaje de gran escala (LLM, por sus siglas en inglés) para implementar depende de varios factores como el caso de uso específico, los recursos 
 disponibles, y las restricciones de idioma y privacidad. Aquí hay algunas opciones populares a considerar:
 
-##Modelos:
+**Modelos:**
 
 La generación automática de música es un área fascinante que combina el procesamiento del lenguaje natural (NLP) con la teoría y composición musical. Aunque los modelos de lenguaje de gran escala (LLM) como GPT-3 o GPT-4 de OpenAI son poderosos para tareas de NLP, la generación de música presenta desafíos únicos que pueden requerir modelos especializados o técnicas adicionales. Sin embargo, algunos modelos y enfoques que podrían ser considerados incluyen:
 
@@ -42,7 +43,7 @@ Complejidad Deseada: Algunos modelos pueden generar melodías simples, mientras 
 Recursos Disponibles: Modelos más avanzados pueden requerir más recursos computacionales.
 En resumen, aunque los LLM tradicionales no están diseñados específicamente para la música, pueden adaptarse para tareas musicales simples, mientras que para tareas más avanzadas, sería mejor utilizar modelos especializados en música como Jukebox de OpenAI o Music Transformer de Google Magenta.
 
-#Política de gobernanza
+**Política de gobernanza:**
 
 La elección de un modelo de gobernanza depende de varios factores, incluyendo el contexto de tu organización, la industria, los stakeholders involucrados, y los objetivos específicos que buscas alcanzar. Aquí describo algunos modelos de gobernanza comunes que podrías considerar:
 
